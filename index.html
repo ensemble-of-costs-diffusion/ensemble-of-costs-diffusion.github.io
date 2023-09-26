@@ -62,11 +62,11 @@
               </span>
 
               <span class="author-block">
-                <a href="" target="_blank">Aditya&nbsp;Agarwal</a><sup>1,2</sup>,
+                <a href="" target="_blank">Aditya&nbsp;Agarwal</a><sup>2</sup>,
               </span>
 
               <span class="author-block">
-                <a href="" target="_blank">Bipasha&nbsp;Sen</a><sup>1,2</sup>,
+                <a href="" target="_blank">Bipasha&nbsp;Sen</a><sup>2</sup>,
               </span>
 
               <span class="author-block">
@@ -86,20 +86,10 @@
               <!-- <span class="author-block"><sup>2</sup>Cornell Tech, Cornell University &nbsp; </span> -->
             </div>
 
-            <h1 style="font-size:16px;font-weight:bold">Under Review, 2024</h1>
+            <h1 style="font-size:16px;font-weight:bold">Under Review at ICRA, 2024</h1>
 
             <div class="column has-text-centered">
               <div class="publication-links">
-                <!-- PDF Link. -->
-                <!--               <span class="link-block">
-                <a href="static/pdfs/dynibar.pdf"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span> -->
                 <span class="link-block">
                   <a href="https://arxiv.org/pdf/2309.11414#:~:text=1)%20We%20propose%20EDMP%2C%20an,scene%2Dspecific%20cost%20guidance%20directly"
                     class="external-link button is-normal is-rounded is-dark">
@@ -109,26 +99,6 @@
                     <span>paper</span>
                   </a>
                 </span>
-                <!-- Video Link. -->
-                <span class="link-block">
-                  <a href="https://www.youtube.com/embed/F2UI0UNsdjo"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                    </span>
-                    <span>Video</span>
-                  </a>
-                </span>
-                <!-- Supp Link. -->
-                <!--               <span class="link-block">
-                <a href="https://github.com/jayaramreddy10/EDMP/"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Supp</span>
-                </a>
-              </span> -->
                 <!-- Code Link. -->
                 <span class="link-block">
                   <a href="#blank" class="external-link button is-normal is-rounded is-dark">
@@ -153,15 +123,12 @@
       <div class="container">
 
         <div class="columns">
-          <div class="item item-fullbody column">
-            <video poster="ocrtoc1" id="fullbody1" autoplay playsinline controls muted loop width="75%"
-              style="float: right;">
+          <div class="item item-fullbody column" style="text-align: center;">
+            <video poster="ocrtoc1" id="fullbody1" class="teaser-video" autoplay playsinline controls muted loop width="75%">
               <source src="videos/ocrtoc/ocrtoc1.mp4" type="video/mp4">
             </video>
-          </div>
 
-          <div class="item item-fullbody column">
-            <video poster="ocrtoc2" id="fullbody2" autoplay playsinline controls muted loop width="75%">
+            <video poster="ocrtoc2" id="fullbody2" class="teaser-video" autoplay playsinline controls muted loop width="75%">
               <source src="videos/ocrtoc/ocrtoc2.mp4" type="video/mp4">
             </video>
           </div>
@@ -169,8 +136,6 @@
       </div>
     </div>
   </section>
-
-
 
   <section class="section">
     <div class="container is-max-desktop">
@@ -218,14 +183,11 @@
         <div class="container is-max-desktop">
 
           <div class="columns is-centered has-text-centered">
-            <h2 class="title is-3">Ensemble of costs guided diffusion</h2>
-
+            <!--<h2 class="title is-3">Ensemble of costs guided diffusion</h2>-->
+            <h2 class="title is-3"> Examples of scenes solved by EDMP directly at inference.</h2>
           </div>
         </div>
       </section>
-
-
-
 
       <section class="hero teaser">
         <div class="container is-max-desktop">
@@ -235,18 +197,17 @@
                 <source src="videos/icra_24_single_classifier_24P_h264.mp4" type="video/mp4">
               </video>
             </center>
-            <h3 class="subtitle has-text-centered">
+            <!--<h3 class="subtitle has-text-centered">
               <font size="-1">
                 <span class="dnerf"> </span>
                 A short visual overview of the paper.
                 <br> *Note that the diffusion happens in the configuration space (7DoF space) but has been shown in the
                 end effector space for better visualisation
               </font>
-            </h3>
+            </h3>-->
           </div>
         </div>
       </section>
-
 
 
       <section class="section">
@@ -409,24 +370,7 @@
     </div>
     </div>
   </section>
-
-
-
-  <!-- <div align="center" style="margin-top:80px;" style="margin-bottom:120px;">
-<img style='height: auto; width: 75%; object-fit: contain' src="static/images/overview.png" alt="overview_image">
-</div>  -->
-
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-      <h2 class="title is-3">Video</h2>
-      <div class="publication-video">
-        <a id="overview_video"></a>
-        <iframe src="https://www.youtube.com/embed/F2UI0UNsdjo" frameborder="0" allow="encrypted-media"
-          allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-
+  <br>
 
   <!--/ Paper video. -->
   <div class="columns is-centered has-text-centered">
@@ -434,7 +378,7 @@
       <h3 class="title is-3">Acknowledgements</h3>
       <div class="content has-text-justified">
         <p>
-          asclnjedofi
+          We would like to thank Adam Fishman for assisting with MπNets and providing valuable insights into collision checking and benchmarking.
         </p>
       </div>
     </div>
@@ -445,112 +389,19 @@
   </section>
 
   <br>
-  <!-- 
-<section>
-  <div class="columns is-centered has-text-centered">
-    <h2 class="title is-3"> More Results</h2>
-</div>
-<br>
-
-<div id="wrapper" style="text-align:center;"> 
-    <video autoplay controls muted loop playsinline id="result_video_side" height="450px" width="auto" width="auto" > 
-        <source type="video/mp4" src="static/videos/2558_side-0-1.mp4" /> 
-    </video>
-
-    <video autoplay controls muted loop playsinline id="result_video_side"> 
-        <source type="video/mp4" src="static/videos/000654_side-0-1.mp4" /> 
-    </video>
-    <video  autoplay controls muted loop playsinline id="result_video_side"> 
-        <source type="video/mp4" src="static/videos/000242_side-0-1.mp4" /> 
-    </video>
-
-    <div class="clear"></div>
-Tracking camera motion (horizontal) 
-</div>
-
-<br>
-
-<div id="wrapper" style="text-align:center;  padding: 2em 0;"> 
-    <video  autoplay controls muted loop playsinline id="result_video_updown"> 
-        <source type="video/mp4" src="static/videos/000679_up-down-0-1.mp4" /> 
-    </video>
-
-    <video autoplay controls muted loop playsinline id="result_video_updown"> 
-        <source type="video/mp4" src="static/videos/5428_up-down-0-1.mp4" /> 
-    </video>
-
-    <video  autoplay controls muted loop playsinline id="result_video_updown"> 
-        <source type="video/mp4" src="static/videos/000350_up-down-0-1.mp4" /> 
-    </video>
-
-    <div class="clear"></div> 
-
-Tracking camera motion (vertical) 
-</div>
-
-<br>
-
-<div id="wrapper" style="text-align:center;"> 
-    <video  autoplay controls muted loop playsinline id="result_video_zooming"> 
-        <source type="video/mp4" src="static/videos/zoom-in_000204-0-1.mp4" /> 
-    </video>
-
-    <video autoplay controls muted loop playsinline id="result_video_zooming"> 
-        <source type="video/mp4" src="static/videos/zoom-in_0161-0-1.mp4" /> 
-    </video>
-
-    <video  autoplay controls muted loop playsinline id="result_video_zooming"> 
-        <source type="video/mp4" src="static/videos/zoom-in_000304-0-1.mp4" /> 
-    </video>
-
-    <div class="clear"></div> 
-
-Zooming-In camera motion 
-</div>
-</section>
-
-<br>
-<br>
-
-<section>
-    <div class="columns is-centered has-text-centered">
-      <h2 class="title is-3"> Failure Cases</h2>
-    </div>
-<br>
-    <div id="wrapper" style="text-align:center;"> 
-    <video  autoplay controls muted loop playsinline id="failure_video"> 
-        <source type="video/mp4" src="static/videos/failure1.mp4" /> 
-    </video>
-&nbsp;&nbsp;
-    <video  autoplay controls muted loop playsinline id="failure_video"> 
-        <source type="video/mp4" src="static/videos/failure2.mp4" /> 
-    </video>
-
-    <div class="clear"></div> 
-Our method cannot handle motions that are too large/challenging, and doesn't work well with incorrectly estimated monocular depths.
-
-</div>
-</section> -->
-
-
-  <!-- 
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>
-@{li2022_infinite_nature_zero,
-  title     = {DynIBaR: Learning Perpetual View Generation of Natural Scenes from Single Images},
-  author    = {Li, Zhengqi and Wang, Qianqian and Snavely, Noah and Kanazawa, Angjoo},
-  year      = {2022}
-}</code></pre>
-  </div>
-</section> -->
 
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>
-    bibtex goes here 
+@misc{saha2023edmp,
+      title={EDMP: Ensemble-of-costs-guided Diffusion for Motion Planning}, 
+      author={Kallol Saha and Vishal Mandadi and Jayaram Reddy and Ajit Srikanth and Aditya Agarwal and Bipasha Sen and Arun Singh and Madhava Krishna},
+      year={2023},
+      eprint={2309.11414},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
+}
     </code></pre>
     </div>
   </section>
