@@ -147,6 +147,11 @@
           </div>
           <div class="item item-toby">
             <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+              <source src="videos/clutter5.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-toby">
+            <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
                 <source src="videos/clutter2.mp4" type="video/mp4">
             </video>
           </div>
@@ -158,12 +163,6 @@
           <div class="item item-coffee">
             <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
               <source src="videos/clutter4.mp4" type="video/mp4">
-            </video>
-          </div>
-    
-          <div class="item item-toby">
-            <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-              <source src="videos/clutter5.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-toby">
@@ -231,19 +230,36 @@
       </div>
       <!--/ Abstract. -->
 
-
       <section class="section">
         <div class="container is-max-desktop">
-
-          <div class="columns is-centered has-text-centered">
-            <!--<h2 class="title is-3">Ensemble of costs guided diffusion</h2>-->
-            <h2 class="title is-3"> Visualizing diffusion-steps at the time of inference!</h2>
+    
+          <div class="columns is-centered">
+            <div class="column is-full-width">
+              <h2 class="title is-3" style="text-align: center;">Overview</h2>
+              <div class="content has-text-justified" style="position: relative; z-index: 0;">
+                <img src="images/edmparch.png">
+          <p>
+            <b>Architecture.</b> EDMP leverages a diffusion model alongside an ensemble of l cost functions. The diffusion model denoises a batch
+of trajectories τ from t = T to 0, while each cost in the ensemble guides a specific sub-batch. We calculate the gradient ∇J of each
+collision cost (intersection or swept volume) in the ensemble from robot and environment bounding boxes, using differentiable forward
+kinematics. After denoising is over, the trajectory with minimum swept volume is chosen as the solution.  
+          </p>
+              </div>
+            </div>
           </div>
+    
         </div>
       </section>
 
-      <section class="hero teaser">
+
+      <section class="section" style="margin-bottom: -80px;">
         <div class="container is-max-desktop">
+
+          <div class="columns is-centered has-text-centered" style="margin-bottom: -30px;">
+            <!--<h2 class="title is-3">Ensemble of costs guided diffusion</h2>-->
+            <h2 class="title is-3"> Visualizing diffusion-steps at the time of inference!</h2>
+          </div>
+        
           <div class="hero-body">
             <center>
               <video id="teaser" autoplay muted loop playsinline width="99%">
@@ -277,12 +293,8 @@
       </div>
     </div>
   </div>
-
   </div>
-
   </section>
-
-  <br>
 
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
