@@ -2,6 +2,15 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+.slider-item {
+    width: 320px!important;
+    margin-right:7px;
+}
+
+.looking {
+	background: #ffffaa;
+}
+
 .teaser-video {
     max-width: 500px;
 }
